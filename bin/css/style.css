@@ -189,6 +189,9 @@ p.mb-2 {
 	.nav-space {
 		height:0;
 	}
+	.nav {
+  		position: relative;
+	}
 	.nav .logo {
 		position: relative;
 		top:unset;
