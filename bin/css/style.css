@@ -58,6 +58,9 @@ body {
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
 }
+.wow {
+	visibility: hidden;
+}
 a {
 	text-decoration: none;
 	color:inherit;
