@@ -89,6 +89,24 @@ a:hover {
 a:hover i {
 	margin-left:8px;
 }
+.cursor_follow {
+	display:none;
+	position:absolute;
+	height:80px;
+	width:80px;
+	border:2px solid #262422;
+	border-radius: 80px;
+	pointer-events: none;
+	z-index: 100;
+	transform:translate(-50%,-50%);
+	-o-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+}
+.cursor_follow.active {
+	display: block;
+}
 .columns.right {
 	float:right;
 }
@@ -345,11 +363,11 @@ p.mb-2 {
 	width:50%;
 }
 .work .slide.prev {
-	cursor: url(/img/prev.png) 16 16, auto;
+	cursor: url(/img/prev.png) 20 13, auto;
 	left:0;
 }
 .work .slide.next {
-	cursor: url(/img/next.png) 16 16, auto;
+	cursor: url(/img/next.png) 20 13, auto;
 	right:0;
 }
 .work .work-info {

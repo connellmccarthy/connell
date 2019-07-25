@@ -15,6 +15,20 @@ $(document).ready(function() {
 	}
 	$('.next').click(function() {switchFrame('fwd');});
 	$('.prev').click(function() {switchFrame('rvs');});
+
+
+	$('#work-frame').mouseenter(function() {
+		$('.cursor_follow').fadeIn(1);
+	}).mouseleave(function() {
+		$('.cursor_follow').fadeOut(1);
+	});
+});
+
+$(document).on('mousemove', function(e) {
+	$('.cursor_follow').css({
+		left: e.pageX,
+		top: e.pageY
+	});
 });
 
 function preload(arrayOfImages) {
