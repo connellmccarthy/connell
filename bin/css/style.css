@@ -91,7 +91,9 @@ a:hover i {
 }
 .cursor_follow {
 	display:none;
-	position:absolute;
+	position:fixed;
+	top:0;
+	left:0;
 	height:80px;
 	width:80px;
 	border:2px solid #262422;

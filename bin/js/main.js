@@ -2,6 +2,9 @@ var isMobile = window.matchMedia("only screen and (max-width: 768px)").matches;
 var count = 1;
 var max = 4;
 var categ = ["Branding", "Branding", "Digital Art", "Digital Art"];
+var mouse = { x: 0, y: 0 };
+var pos = { x: 0, y: 0 };
+var ratio = 0.25;
 $(document).ready(function() {
 	console.log('%cHandcrafted from scratch just for you. \nv4 - Connell McCarthy \n\nView on Github: https://github.com/connellmccarthy/connell',"border-radius:3px; padding:3px; background: #FF6136; color: #fff");
 	preload([
@@ -18,18 +21,28 @@ $(document).ready(function() {
 
 
 	$('#work-frame').mouseenter(function() {
-		$('.cursor_follow').fadeIn(1);
+		$('.cursor_follow').fadeIn('fast');
 	}).mouseleave(function() {
-		$('.cursor_follow').fadeOut(1);
+		$('.cursor_follow').fadeOut('fast');
 	});
+
+	window.setInterval(function(){updatePos();},0);
 });
 
 $(document).on('mousemove', function(e) {
-	$('.cursor_follow').css({
-		left: e.pageX,
-		top: e.pageY
-	});
+	var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+	mouse.x = e.pageX;
+	mouse.y = e.pageY - scrollTop;
 });
+
+function updatePos() {
+	pos.x += (mouse.x - pos.x) * ratio;
+	pos.y += (mouse.y - pos.y) * ratio;
+	$('.cursor_follow').css({
+		left: pos.x,
+		top: pos.y
+	});
+}
 
 function preload(arrayOfImages) {
     $(arrayOfImages).each(function(){
