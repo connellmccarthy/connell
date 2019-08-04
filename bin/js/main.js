@@ -1,7 +1,7 @@
 var isMobile = window.matchMedia("only screen and (max-width: 768px)").matches;
 var count = 1;
-var max = 4;
-var categ = ["Branding", "Branding", "Digital Art", "Digital Art"];
+var max = 5;
+var categ = ["Branding", "Branding", "Digital Art", "Digital Art", "Digital Art"];
 var mouse = { x: 0, y: 0 };
 var pos = { x: 0, y: 0 };
 var ratio = 0.25;
@@ -11,7 +11,8 @@ $(document).ready(function() {
 	    'img/work/1.jpg',
 	    'img/work/2.jpg',
 	    'img/work/3.jpg',
-	    'img/work/4.jpg'
+	    'img/work/4.jpg',
+	    'img/work/5.jpg'
 	]);
 	if (isMobile) {
 		window.setInterval(function(){switchFrame('fwd');}, 2500);
