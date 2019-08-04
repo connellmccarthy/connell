@@ -1,7 +1,7 @@
 var isMobile = window.matchMedia("only screen and (max-width: 768px)").matches;
 var count = 1;
 var max = 5;
-var categ = ["Branding", "Branding", "Digital Art", "Digital Art", "Digital Art"];
+var categ = ["Digital Art", "Branding", "Digital Art", "Branding", "Digital Art"];
 var mouse = { x: 0, y: 0 };
 var pos = { x: 0, y: 0 };
 var ratio = 0.25;
