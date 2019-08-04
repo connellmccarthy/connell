@@ -1,8 +1,9 @@
+![Connell McCarthy - Canadian Creative](https://www.connellmccarthy.com/img/feature.jpg)
+
+
 connellmccarthy.com
 ======
 My personal portfolio landing page.
-
-![Connell McCarthy - Canadian Creative](https://www.connellmccarthy.com/img/feature.jpg)
 
 ### Uses the following libraries
 
