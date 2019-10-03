@@ -5,6 +5,8 @@ connellmccarthy.com
 ======
 My personal portfolio landing page.
 
+[View it in action](https://www.connellmccarthy.com/)
+
 ### Uses the following libraries
 
 [Skeleton.css](http://getskeleton.com/)
