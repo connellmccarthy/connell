@@ -5,6 +5,9 @@ connellmccarthy.com
 ======
 My personal portfolio landing page.
 
+To build, run
+```python -m SimpleHTTPServer```
+
 [View it in action](https://www.connellmccarthy.com/)
 
 ### Uses the following libraries
